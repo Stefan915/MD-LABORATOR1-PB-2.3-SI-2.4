@@ -1,22 +1,26 @@
-#include "integrale.h"
-#include <math.h>
+#include "../HEADERS//integrale.h"
+
+
+
+
+
+
+
+
 
 double integralaTrapez(double limInf, double limSup, unsigned int nrDiviziuni, double (*functie)(double))
 {
 	double valoare;
 	double x;
 	double dx;
-	double eps=1e-4;
 
 	dx=(limSup-limInf)/nrDiviziuni;
 	
 	valoare = ((*functie)(limInf)+(*functie)(limSup))/2;
 
-	for(x=limInf+dx;fabs(x+dx-limSup)>eps;x=x+dx)
+	for(x=limInf+dx;x<limSup;x=x+dx)
 	{
-
 		valoare=valoare+((*functie)(x));
-
 	}
 	valoare=valoare*dx;
 	
@@ -65,16 +69,3 @@ double integralaDreptunghiuri(double limInf, double limSup, unsigned int nrDiviz
 
     return valoareIntegrala;
 }
-
-double functie(double x)
-{
-    return sin(exp(2 * x) + 3);
-}
-
-double fX(double x)
-{
-    return x;
-}
-
-
-

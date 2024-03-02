@@ -1,4 +1,4 @@
-#include "menu.h"
+#include "../HEADERS//menu.h"
 #include "stdio.h"
 
 struct _MENU_ITEM meniu[numarOptiuniMeniu]={

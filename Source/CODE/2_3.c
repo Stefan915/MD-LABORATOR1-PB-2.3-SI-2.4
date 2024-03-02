@@ -1,8 +1,22 @@
-#include "integrale.h"
-#include "io.h"
-#include "menu.h"
+#include "../HEADERS//integrale.h"
+#include "../HEADERS//io.h"
+#include "../HEADERS//menu.h"
+#include "../HEADERS//functii.h"
 
 extern struct _MENU_ITEM meniu[];
+
+
+
+struct Integrala integraleDeCalculat[NUMAR_INTEGRALE_DE_CALULAT]=
+        {
+                {0,1,f1},
+                {1,3,f2},
+                {0,3,f3},
+                {1,4,f4},
+                {1,5,f5}
+        };
+
+
 
 int main() {
     double valoareIntegrala;
@@ -26,7 +40,7 @@ int main() {
     limSup = citesteDouble("Limita superioara");
     precizie = citesteDouble("Precizie∈[2,inf)");
 
-    valoareIntegrala = meniu[alegere].functieCalcul(limInf, limSup, precizie, fX);
+    valoareIntegrala = meniu[alegere].functieCalcul(limInf, limSup, precizie, f1);
 
     afisareRezultat(meniu[alegere], valoareIntegrala);
 

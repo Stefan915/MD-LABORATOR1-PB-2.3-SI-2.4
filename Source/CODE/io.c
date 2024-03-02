@@ -1,5 +1,5 @@
-#include "io.h"
-#include "menu.h"
+#include "../HEADERS/io.h"
+#include "../HEADERS/menu.h"
 #include <stdio.h>
 double citesteDouble(char *numeVariabila)
 {

@@ -19,7 +19,7 @@ io.o: io.c
 
 menu.o: menu.c
 	clang -c -Wall menu.c
-.PHONY: clean run
+.PHONY: clean
 clean:
 	rm *.o
 	rm $(TARGET)

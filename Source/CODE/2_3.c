@@ -25,11 +25,11 @@ int main() {
     double precizie;
     int alegere;
 
-    dialogIncepereExecutie();
+    dialogIncepereExecutie2_3();
     alegere = iaOptiune(numarOptiuniMeniu, meniu);
 
     if(alegere==0) {
-        dialogIesireProgram();
+        dialogIesireProgram2_3();
         return 0;
     }
     else {
@@ -42,7 +42,7 @@ int main() {
 
     valoareIntegrala = meniu[alegere].functieCalcul(limInf, limSup, precizie, f1);
 
-    afisareRezultat(meniu[alegere], valoareIntegrala);
+    afisareRezultat2_3(meniu[alegere], valoareIntegrala);
 
     return 0;
 }

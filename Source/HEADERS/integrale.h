@@ -6,7 +6,7 @@ struct Integrala
 {
     double limInf;
     double limSup;
-    double (*functie)(double,double,unsigned int,double (*)(double));
+    double (*functie)(double x);
 };
 
 

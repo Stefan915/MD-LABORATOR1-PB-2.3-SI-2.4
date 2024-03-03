@@ -4,7 +4,9 @@
 #include "menu.h"
 
 double citesteDouble(char *numeVariabila);
-void afisareRezultat(struct _MENU_ITEM alegere, double rezultat);
-void dialogIesireProgram();
-void dialogIncepereExecutie();
+void dialogIesireProgram2_3();
+void dialogIncepereExecutie2_4();
+void afisareRezultat2_3(struct _MENU_ITEM alegere, double rezultat);
+void dialogIncepereExecutie2_3();
+
 #endif
